@@ -24,7 +24,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "Get assortment group ",
+                        "description": "Get assortment group",
                         "content": {
                             "application\/json": {
                                 "schema": {
