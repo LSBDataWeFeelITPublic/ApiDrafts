@@ -1,0 +1,1878 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "SF5Sandbox",
+        "description": "LSB",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "\/api\/product\/assortmentGroups\/{uuid}": {
+            "get": {
+                "tags": [
+                    "AssortmentGroup"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get assortment group",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppAssortmentGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "AssortmentGroup"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "AssortmentGroup"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Removes assortment group"
+                    }
+                }
+            }
+        },
+        "\/api\/product\/assortmentGroups": {
+            "get": {
+                "tags": [
+                    "AssortmentGroup"
+                ],
+                "operationId": null,
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "AssortmentGroup"
+                ],
+                "operationId": null,
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/assortmentGroupTranslations\/{uuid}": {
+            "get": {
+                "tags": [
+                    "AssortmentGroupTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppAssortmentGroupTranslation"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "AssortmentGroupTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "AssortmentGroupTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "AssortmentGroupTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/assortmentGroupTranslations": {
+            "get": {
+                "tags": [
+                    "AssortmentGroupTranslation"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppAssortmentGroupTranslation"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "AssortmentGroupTranslation"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppAssortmentGroupTranslationType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/products\/{uuid}": {
+            "get": {
+                "tags": [
+                    "Product"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppProduct"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Product"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Product"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "Product"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/products": {
+            "get": {
+                "tags": [
+                    "Product"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppProduct"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Product"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppProductType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/productSetProducts\/{uuid}": {
+            "get": {
+                "tags": [
+                    "ProductSetProduct"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppProductSetProduct"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "ProductSetProduct"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "ProductSetProduct"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "ProductSetProduct"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/productSetProducts": {
+            "get": {
+                "tags": [
+                    "ProductSetProduct"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppProductSetProduct"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "ProductSetProduct"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppProductSetProductType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/productTranslations\/{uuid}": {
+            "get": {
+                "tags": [
+                    "ProductTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppProductTranslation"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "ProductTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "ProductTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "ProductTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/productTranslations": {
+            "get": {
+                "tags": [
+                    "ProductTranslation"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppProductTranslation"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "ProductTranslation"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppProductTranslationType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/suppliers\/{uuid}": {
+            "get": {
+                "tags": [
+                    "Supplier"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppSupplier"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Supplier"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Supplier"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "Supplier"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/suppliers": {
+            "get": {
+                "tags": [
+                    "Supplier"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppSupplier"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Supplier"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppSupplierType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/supplierTranslations\/{uuid}": {
+            "get": {
+                "tags": [
+                    "SupplierTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppSupplierTranslation"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "SupplierTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "SupplierTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "SupplierTranslation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/product\/supplierTranslations": {
+            "get": {
+                "tags": [
+                    "SupplierTranslation"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppSupplierTranslation"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "SupplierTranslation"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppSupplierTranslationType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/contractor\/contactPersons\/{uuid}": {
+            "get": {
+                "tags": [
+                    "ContactPerson"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppContactPerson"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "ContactPerson"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "ContactPerson"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "ContactPerson"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/contractor\/contactPersons": {
+            "get": {
+                "tags": [
+                    "ContactPerson"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppContactPerson"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "ContactPerson"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppContactPersonType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/contractor\/contractors\/{uuid}": {
+            "get": {
+                "tags": [
+                    "Contractor"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppContractor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Contractor"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Contractor"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "Contractor"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/contractor\/contractors": {
+            "get": {
+                "tags": [
+                    "Contractor"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppContractor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Contractor"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppContractorType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/contractor\/contractorGroups\/{uuid}": {
+            "get": {
+                "tags": [
+                    "ContractorGroup"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppContractorGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "ContractorGroup"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "ContractorGroup"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "ContractorGroup"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/contractor\/contractorGroups": {
+            "get": {
+                "tags": [
+                    "ContractorGroup"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppContractorGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "ContractorGroup"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppContractorGroupType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/contractor\/contractorGroupRelations\/{uuid}": {
+            "get": {
+                "tags": [
+                    "ContractorGroupRelation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppContractorGroupRelation"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "ContractorGroupRelation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "ContractorGroupRelation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "ContractorGroupRelation"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/contractor\/contractorGroupRelations": {
+            "get": {
+                "tags": [
+                    "ContractorGroupRelation"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppContractorGroupRelation"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "ContractorGroupRelation"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppContractorGroupRelationType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/user\/users\/{uuid}": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get object",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppUser"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "User"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Remove object"
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "User"
+                ],
+                "operationId": null,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/api\/user\/users": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "operationId": null,
+                "responses": {
+                    "200": {
+                        "description": "Get objects",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/AppUser"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "operationId": null,
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/AppUserType"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AppAssortmentGroup": {
+                "properties": {
+                    "code": {
+                        "title": "Code",
+                        "type": "string",
+                        "maxLength": 30
+                    }
+                },
+                "type": "object"
+            },
+            "AppAssortmentGroupTranslation": {
+                "properties": {
+                    "name": {
+                        "title": "Name",
+                        "type": "string",
+                        "maxLength": 255
+                    }
+                },
+                "type": "object"
+            },
+            "AppAssortmentGroupTranslationType": {
+                "required": [
+                    "code"
+                ],
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "AppProduct": {
+                "properties": {
+                    "number": {
+                        "type": "string",
+                        "maxLength": 50
+                    },
+                    "isPackage": {
+                        "type": "boolean"
+                    },
+                    "itemsInPackage": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "eanCode": {
+                        "type": "string",
+                        "maxLength": 50
+                    },
+                    "priority": {
+                        "title": "Product priority, 1 - most important, least important",
+                        "type": "integer"
+                    },
+                    "isAvailableForBackorder": {
+                        "type": "boolean"
+                    },
+                    "productSetProducts": {
+                        "title": "List of components of the set",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/AppProductSetProduct2"
+                        }
+                    },
+                    "productSets": {
+                        "title": "Collection of sets to which the product belongs",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/AppProductSetProduct2"
+                        }
+                    },
+                    "useSupplier": {
+                        "title": "Enables supplier functionality for the product",
+                        "type": "boolean"
+                    },
+                    "translations": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/AppProductTranslation"
+                        }
+                    },
+                    "newField": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            },
+            "AppProductType": {
+                "required": [
+                    "eanCode",
+                    "number",
+                    "isPackage",
+                    "itemsInPackage",
+                    "priority",
+                    "isProductSet",
+                    "useSupplier",
+                    "translations"
+                ],
+                "properties": {
+                    "eanCode": {
+                        "type": "string"
+                    },
+                    "number": {
+                        "type": "string"
+                    },
+                    "isPackage": {
+                        "type": "boolean"
+                    },
+                    "itemsInPackage": {
+                        "type": "number"
+                    },
+                    "priority": {
+                        "type": "number"
+                    },
+                    "isProductSet": {
+                        "type": "boolean"
+                    },
+                    "useSupplier": {
+                        "type": "boolean"
+                    },
+                    "translations": {
+                        "$ref": "#\/components\/schemas\/TranslationsType"
+                    }
+                },
+                "type": "object"
+            },
+            "AppProductSetProduct": {
+                "type": "object"
+            },
+            "AppProductSetProductType": {
+                "required": [
+                    "code"
+                ],
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "AppProductTranslation": {
+                "properties": {
+                    "name": {
+                        "title": "Product name",
+                        "type": "string",
+                        "maxLength": 255
+                    },
+                    "additionalName": {
+                        "title": "Additional name",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "title": "Slug",
+                        "type": "string",
+                        "maxLength": 255
+                    },
+                    "description": {
+                        "title": "Product description",
+                        "type": "string"
+                    },
+                    "unit": {
+                        "title": "Unit (pcs., package or service)",
+                        "type": "string",
+                        "maxLength": 15
+                    },
+                    "locale": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "AppProductTranslationType": {
+                "required": [
+                    "name",
+                    "additionalName",
+                    "slug",
+                    "unit"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "additionalName": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "unit": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "AppSupplier": {
+                "type": "object"
+            },
+            "AppSupplierType": {
+                "required": [
+                    "name",
+                    "code",
+                    "number",
+                    "type",
+                    "isSeparateShippingPackageRequired",
+                    "isDefault",
+                    "isShippingBySupplierEnabled"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "number": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "integer"
+                    },
+                    "isSeparateShippingPackageRequired": {
+                        "type": "string"
+                    },
+                    "isDefault": {
+                        "type": "boolean"
+                    },
+                    "isShippingBySupplierEnabled": {
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            },
+            "AppSupplierTranslation": {
+                "type": "object"
+            },
+            "AppSupplierTranslationType": {
+                "required": [
+                    "description",
+                    "productAvailabilityMessage"
+                ],
+                "properties": {
+                    "description": {
+                        "type": "string"
+                    },
+                    "productAvailabilityMessage": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "AppContactPerson": {
+                "type": "object"
+            },
+            "AppContactPersonType": {
+                "type": "object"
+            },
+            "AppContractor": {
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "AppContractorType": {
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "AppContractorGroup": {
+                "type": "object"
+            },
+            "AppContractorGroupType": {
+                "type": "object"
+            },
+            "AppContractorGroupRelation": {
+                "type": "object"
+            },
+            "AppContractorGroupRelationType": {
+                "type": "object"
+            },
+            "AppUser": {
+                "type": "object"
+            },
+            "AppUserType": {
+                "type": "object"
+            },
+            "AppProductSetProduct2": {
+                "type": "object"
+            },
+            "TranslationsType": {
+                "type": "object"
+            }
+        }
+    }
+}
