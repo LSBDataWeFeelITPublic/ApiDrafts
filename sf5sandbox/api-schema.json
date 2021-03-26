@@ -6,7 +6,7 @@
         "version": "1.0.0"
     },
     "paths": {
-        "\/api\/product\/assortmentGroups\/{uuid}": {
+        "\/api\/product\/assortmentGroupsXXX\/{uuid}": {
             "get": {
                 "tags": [
                     "AssortmentGroup"
